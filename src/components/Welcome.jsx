@@ -6,6 +6,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { useSpring, animated } from "react-spring";
+import { NavLink } from 'react-router-dom';
 
 function Welcome() {
   const handleRedirect = (url) => {
@@ -49,6 +50,7 @@ function Welcome() {
           >
             ¡Bienvenido a tu hogar lejos de casa!
           </animated.h4>
+          <NavLink to="/contacto">
           <Button
             variant="contained"
             size="large"
@@ -56,6 +58,7 @@ function Welcome() {
           >
             Reserva ahora
           </Button>
+          </NavLink>
         </div>
         <div className="absolute bottom-4 right-4 flex gap-4">
           {/* Iconos de redes sociales */}

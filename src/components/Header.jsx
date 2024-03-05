@@ -33,6 +33,7 @@ function Header() {
     <header className="flex flex-col md:flex-row items-center justify-between px-4 py-4 md:py-6 bg-white shadow-md border-b-2 border-transparent transition-all duration-1500 flex-wrap">
       {/* Logo */}
       <div className="flex items-center">
+      <NavLink to="/">
         <motion.div
           initial={{ scale: 1 }}
           whileHover={{ scale: 1.1 }}
@@ -43,8 +44,9 @@ function Header() {
             Altura Andina
           </h2>
         </motion.div>
+        </NavLink >
       </div>
-
+     
       {/* Barra de navegación */}
       <nav className="flex flex-wrap justify-center md:justify-start md:flex-grow">
         <div className="md:hidden">

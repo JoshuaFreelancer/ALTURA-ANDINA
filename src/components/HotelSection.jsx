@@ -18,7 +18,7 @@ const HotelSection = () => {
             <animated.div style={textProps}>
               <Box>
                 <Typography variant="h2" gutterBottom className="text-brand-500">
-                  Bienvenido al Altura Andina Hotel & Spa
+                  Bienvenido a Altura Andina Hotel & Spa
                 </Typography>
                 <Typography variant="h5" gutterBottom className="text-gray-600">
                   Descubre una experiencia única en el corazón de Mérida
