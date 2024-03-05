@@ -1,12 +1,19 @@
-import React from 'react';
-import { Typography, Grid, Card, CardContent, CardMedia } from '@mui/material';
-import { useSpring, animated } from 'react-spring';
-import { MdRestaurant, MdHotTub, MdWifi, MdDirectionsWalk, MdLocalActivity, MdBusiness } from 'react-icons/md';
+import React from "react";
+import { Typography, Grid, Card, CardContent, CardMedia } from "@mui/material";
+import { useSpring, animated } from "react-spring";
+import {
+  MdRestaurant,
+  MdHotTub,
+  MdWifi,
+  MdDirectionsWalk,
+  MdLocalActivity,
+  MdBusiness,
+} from "react-icons/md";
 
 function ServicesSection() {
   const flipProps = useSpring({
-    from: { transform: 'perspective(600px) rotateX(180deg)', opacity: 0 },
-    to: { transform: 'perspective(600px) rotateX(0deg)', opacity: 1 },
+    from: { transform: "perspective(600px) rotateX(180deg)", opacity: 0 },
+    to: { transform: "perspective(600px) rotateX(0deg)", opacity: 1 },
     config: { mass: 15, tension: 500, friction: 100 },
   });
 
@@ -22,11 +29,11 @@ function ServicesSection() {
               <Card>
                 <CardMedia
                   component="img"
-                  height="140"
-                  image={service.image || '/images/placeholder.jpg'}
+                  style={{ height: '150px', objectFit: 'cover' }}
+                  image={service.image || "/images/placeholder.jpg"}
                   alt={`Servicio ${index + 1}`}
-                  style={{ borderRadius: '50%' }}
                 />
+
                 <CardContent>
                   <Typography variant="h5" component="h2" gutterBottom>
                     {service.title}
@@ -47,40 +54,44 @@ function ServicesSection() {
 
 const services = [
   {
-    title: 'Restaurante Gourmet',
-    description: 'Disfruta de exquisitos platos preparados por chefs expertos.',
+    title: "Restaurante Gourmet",
+    description: "Disfruta de exquisitos platos preparados por chefs expertos.",
     icon: <MdRestaurant />,
-    image: '/images/dining.jpg',
+    image: "assets/images/Restaurante.jpeg",
   },
   {
-    title: 'Spa de Lujo',
-    description: 'Relájate y rejuvenece en nuestro lujoso spa.',
+    title: "Spa de Lujo",
+    description: "Relájate y rejuvenece tu cuerpo en nuestro lujoso spa.",
     icon: <MdHotTub />,
-    image: '/images/spa.jpg',
+    image: "assets/images/Spa.jpeg",
   },
   {
-    title: 'Wi-Fi de Alta Velocidad',
-    description: 'Mantente conectado con nuestro rápido y confiable servicio de Wi-Fi.',
+    title: "Wi-Fi de Alta Velocidad",
+    description:
+      "Mantente conectado con nuestro rápido y confiable servicio de Wi-Fi 5G.",
     icon: <MdWifi />,
-    image: '/images/wifi.jpg',
+    image: "assets/images/Wifi.jpeg",
   },
   {
-    title: 'Excursiones de Montañismo',
-    description: 'Explora las majestuosas montañas de Mérida con guías expertos.',
+    title: "Excursiones de Montañismo",
+    description:
+      "Explora las majestuosas montañas de Mérida y sube el pico del avila con guías de expertos.",
     icon: <MdDirectionsWalk />,
-    image: '/images/mountain.jpg',
+    image: "assets/images/Montaña.jpeg",
   },
   {
-    title: 'Actividades Recreativas',
-    description: 'Disfruta de una amplia gama de actividades recreativas en nuestro hotel.',
+    title: "Actividades Recreativas",
+    description:
+      "Disfruta de una amplia gama de actividades recreativas en nuestro maravilloso hotel.",
     icon: <MdLocalActivity />,
-    image: '/images/activities.jpg',
+    image: "assets/images/Recreacion.jpg",
   },
   {
-    title: 'Salas de Reuniones',
-    description: 'Organiza reuniones y eventos en nuestras modernas y equipadas salas.',
+    title: "Salas de Reuniones",
+    description:
+      "Organiza reuniones y eventos en nuestras modernas y equipadas salas.",
     icon: <MdBusiness />,
-    image: '/images/meeting-room.jpg',
+    image: "assets/images/Reuniones.jpg",
   },
 ];
 

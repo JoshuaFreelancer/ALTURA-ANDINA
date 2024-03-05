@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Snowfall from 'react-snowfall';
 import { Button } from "@mui/material";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -31,9 +32,11 @@ function Welcome() {
 
   return (
     <div className="relative">
+      {/* Efecto de nieve */}
+      <Snowfall snowflakeCount={40} color="white" style={{ zIndex: 1000 }} />
       {/* Imagen de fondo con superposición */}
       <div
-        className="bg-cover bg-center w-full h-96 md:h-96 sm:h-96 relative"
+        className="bg-cover bg-center w-full h-96 md:h-96 sm:h-96 relative  text-center"
         style={{ backgroundImage: `url(/assets/images/Welcome.jpg)` }}
       >
         <div className="absolute inset-0 bg-black opacity-30"></div>{" "}
@@ -42,7 +45,7 @@ function Welcome() {
           {/* Título animado */}
           <animated.h4
             style={titleProps}
-            className="text-2xl lg:text-5xl md:text-4xl sm:text-3xl phone:text-3xl xs:text-xl xss:text-lg font-bold mb-8"
+            className="text-2xl lg:text-5xl md:text-4xl sm:text-3xl phone:text-3xl xs:text-2xl xss:text-xl font-bold mb-8 whitespace-pre-wrap"
           >
             ¡Bienvenido a tu hogar lejos de casa!
           </animated.h4>
@@ -51,7 +54,6 @@ function Welcome() {
             size="large"
             className="bg-500 hover:bg-600 text-white font-lato"
           >
-            {/* Cambiar la fuente del botón a Lato */}
             Reserva ahora
           </Button>
         </div>

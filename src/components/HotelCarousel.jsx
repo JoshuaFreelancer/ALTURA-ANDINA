@@ -57,8 +57,8 @@ const HotelCarousel = () => {
         transitionTime={700}
       >
         <animated.div style={slideProps}>
-          <Box display="flex" flexDirection="column" alignItems="center" justifyContent="space-between" className="w-full h-96 bg-center">
-            <img src="https://www.shutterstock.com/image-photo/rustic-interior-log-cabin-bedroom-600nw-1230647392.jpg" alt="Placeholder" className="object-cover w-full h-full" />
+          <Box display="flex" flexDirection="column" alignItems="center" justifyContent="space-between" className="w-full h-full bg-center">
+            <img src="assets/images/Estandar.jpg" alt="Habitacion Estandar" className="object-cover w-full h-full" />
             <Box display="flex" flexDirection="column" alignItems="flex-end" p={2} backgroundColor="#313F3E" borderRadius="md" position="absolute" bottom={0} right={0}>
               <Typography variant="h5" fontWeight="bold" color="white" fontFamily="Lato">
                 Habitación Estándar
@@ -72,7 +72,38 @@ const HotelCarousel = () => {
             </Box>
           </Box>
         </animated.div>
-        {/* Recuerda Agregar más elementos del carrusel aquí */}
+        <animated.div style={slideProps}>
+          <Box display="flex" flexDirection="column" alignItems="center" justifyContent="space-between" className="w-full h-full bg-center">
+            <img src="assets/images/Lujo.jpeg" alt="Habitacion Lujosa" className="object-cover w-full h-full" />
+            <Box display="flex" flexDirection="column" alignItems="flex-end" p={2} backgroundColor="#313F3E" borderRadius="md" position="absolute" bottom={0} right={0}>
+              <Typography variant="h5" fontWeight="bold" color="white" fontFamily="Lato">
+                Habitacion de Lujo
+              </Typography>
+              <Box display="flex" alignItems="center" color="white">
+                {renderStars(5)}
+                <Typography ml={1} variant="body1" fontFamily="Lato">
+                  $250 por noche
+                </Typography>
+              </Box>
+            </Box>
+          </Box>
+        </animated.div>
+        <animated.div style={slideProps}>
+          <Box display="flex" flexDirection="column" alignItems="center" justifyContent="space-between" className="w-full h-full bg-center">
+            <img src="assets/images/Ejecutiva.jpeg" alt="Habitacion Ejecutiva" className="object-cover w-full h-full" />
+            <Box display="flex" flexDirection="column" alignItems="flex-end" p={2} backgroundColor="#313F3E" borderRadius="md" position="absolute" bottom={0} right={0}>
+              <Typography variant="h5" fontWeight="bold" color="white" fontFamily="Lato">
+                Habitacion Ejecutiva
+              </Typography>
+              <Box display="flex" alignItems="center" color="white">
+                {renderStars(4)}
+                <Typography ml={1} variant="body1" fontFamily="Lato">
+                  $200 por noche
+                </Typography>
+              </Box>
+            </Box>
+          </Box>
+        </animated.div>
       </Carousel>
     </div>
   );

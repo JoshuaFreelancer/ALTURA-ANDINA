@@ -11,7 +11,7 @@ const HotelSection = () => {
   });
 
   return (
-    <section id="hotel-section" className="py-8 bg-gray-100 shadow-xl">
+    <section id="hotel-section" className="py-8 bg-gray-100 shadow-lg">
       <div className="container mx-auto px-4">
         <Grid container spacing={4}>
           <Grid item xs={12} md={6}>
@@ -32,7 +32,7 @@ const HotelSection = () => {
           </Grid>
           <Grid item xs={12} md={6}>
             <Card className="shadow-md">
-              <Image src="https://via.placeholder.com/500" alt="Hotel Placeholder Image" h="full" objectFit="cover" />
+              <Image src="assets/images/Hotel.png" alt="Hotel Placeholder Image" h="full" objectFit="cover" />
             </Card>
           </Grid>
         </Grid>

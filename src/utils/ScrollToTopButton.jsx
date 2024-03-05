@@ -14,7 +14,7 @@ function ScrollToTopButton() {
 
   const handleScroll = () => {
     const currentScroll = window.pageYOffset;
-    if (currentScroll > 200) {
+    if (currentScroll > 140) {
       setIsVisible(true);
     } else {
       setIsVisible(false);

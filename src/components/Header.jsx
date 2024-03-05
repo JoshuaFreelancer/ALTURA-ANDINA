@@ -5,6 +5,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import BedIcon from '@mui/icons-material/Hotel';
 import ServiceIcon from '@mui/icons-material/RoomService';
 import ContactIcon from '@mui/icons-material/ContactPhone';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 function Header() {
@@ -107,9 +108,9 @@ function Header() {
 
 // Componente NavLink
 const NavLink = ({ to, children }) => (
-  <a href={to} className="px-2 py-1 text-gray-500 flex items-center mx-2 transition-opacity duration-300 hover:opacity-75">
+  <Link to={to} className="px-2 py-1 text-gray-500 flex items-center mx-2 transition-opacity duration-300 hover:opacity-75">
     {children}
-  </a>
+  </Link>
 );
 
 export default Header;

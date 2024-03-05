@@ -1,7 +1,7 @@
 {
   "name": "altura-andina-hotel",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -26,8 +26,8 @@
     "react-icons": "^5.0.1",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.22.2",
+    "react-snowfall": "^2.1.0",
     "react-spring": "^9.7.3",
-    "react-typewriter-effect": "^1.1.0",
     "tailwindcss": "^3.4.1"
   },
   "devDependencies": {

@@ -4,7 +4,6 @@ import FlightTakeoffIcon from "@mui/icons-material/FlightTakeoff";
 import LocalMallIcon from "@mui/icons-material/LocalMall";
 import RestaurantIcon from "@mui/icons-material/Restaurant";
 import EventIcon from "@mui/icons-material/Event";
-
 import { useSpring, animated } from "react-spring";
 import { Link } from "react-router-dom";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
@@ -35,7 +34,7 @@ function BlogSection() {
                     alrededores.
                   </Typography>
                   <Link
-                    to="/articulos-turismo"
+                    to="https://www.tripadvisor.com.ve/Attractions-g316050-Activities-Merida_Andean_Region.html"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -88,7 +87,7 @@ function BlogSection() {
                     sus atracciones más destacadas.
                   </Typography>
                   <Link
-                    to="/guias-turisticas"
+                    to="https://www.venezuelatuya.com/andes/guia_turistica_de_merida.htm"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

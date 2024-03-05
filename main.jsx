@@ -8,7 +8,7 @@ import { extendTheme } from '@chakra-ui/react';
 
 const colors = {
   brand: {
-    200: '#DCE9F5',
+    100: '#DCE9F5',
     300: '#BCE7F7',
     400: '#ABD8EC',
     500: '#6998A7',
@@ -39,6 +39,7 @@ const materialTheme = createTheme({
     h3: {
       fontFamily: fonts.heading,
     },
+    // Define typography variants as needed
   },
 });
 
