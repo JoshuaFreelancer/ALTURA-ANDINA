@@ -64,8 +64,6 @@ Accede a la aplicación en tu navegador visitando http://localhost:3000.
 ## Recursos Adicionales
 
 - [Figma de la App](https://www.figma.com/file/mwhpOqIa9AIdlYwH5FiJM0/Altura-Andina-Hotel-%26-Spa?type=design&node-id=3%3A2&mode=design&t=iJAVacy3r5DrDAaW-1)
-- [Video Explicativo](https://youtu.be/gnzBwIcVtIE)
-- [Informe Detallado](https://docs.google.com/document/d/1HK4WBP0tSBr-Qa2dnReWWGbKBzx9qBFfPyUGuvadzEs/edit?usp=sharing)
 
 ## Futuras Actualizaciones
 
